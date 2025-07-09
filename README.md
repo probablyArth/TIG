@@ -13,3 +13,8 @@ Config files will be generated based on the `.env` file.
 - StatsD plugin on telegraf
 - InfluxDB datasource already configured in grafana through [datasource file](./grafana/datasources/datasource.template.yml)
 - InfluxDB & grafana data is persisted in docker volumes. If you dont want volumes to be deleted on stop, add a --volume flag in docker-compose down cmd in [./stop.sh](./stop.sh)
+
+# Images used
+- influxdb:1.8
+- telegraf:1.29
+- grafana/grafana:10.4.2
